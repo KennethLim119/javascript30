@@ -1,0 +1,123 @@
+html {
+  font-size: 10px;
+  background: url(drums.jpg) bottom center;
+  background-size: cover;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.9);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #2646ea;
+  box-shadow: 0 0 1rem #2646ea;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #53eafd;
+  font-weight: bolder;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+
+.clock {
+  align-items: center;
+  background: rgba(0, 0, 0, .2);
+  border: solid 10px #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .2) inset, 0 3px 5px rgba(0, 0, 0, .1);
+  -webkit-display: flex;
+  display: flex;
+  height: 200px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 800px;
+  width: 200px;
+}
+
+.centre {
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0,0,0,.4);
+  height: 15px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  z-index: 11;
+}
+
+.hand {
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,.3);
+  height: 6px;
+  position: absolute;
+  width: calc(50% - 10px);
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: ease;
+}
+
+.hour {
+  margin-left: 20px;
+  width: calc(40% - 10px);
+}
+
+.second {
+  background: #fb2059;
+  z-index: 10;
+}
+
+.minute {
+  background: #cdcdcd;
+}
+
+.time {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 300px;
+  left: 830px;
+  width: 200px;
+}
