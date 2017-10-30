@@ -2,4 +2,4 @@
 
 https://javascript30.com/
 
-[!alt-text](wesbos.png)
+![alt-text](wesbos.png)
